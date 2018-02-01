@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="./public/styles/styles.css">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="./public/scripts/scripts.js"></script>
+        <title>UNION.co Memory Game Challenge</title>
+    </head>
+    <body>
+        <!-- Game complete modal -->
+        <div id="completeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 id="game-next">TURN COMPLETE - PLAYER 2 BEGIN</h1>
+                <h1 id="game-complete-v1">GAME COMPLETE - PLAYER <span id="winning-player"></span> WINS!</h1>
+                <h1 id="game-complete-v2">GAME COMPLETE - IT'S A TIE!</h1>
+            </div>
+        </div>
+        <!-- Game complete modal end -->
+        <!-- Game header -->
+        <h1 class="game-header">MEMORY GAME CHALLENGE</h1>
+        <div class="text-center"><a class="game-button" id="new-game" href="#">NEW GAME</a></div>
+        <div class="player-data">
+            <div class="player player-active">PLAYER 1: <span class="click-count" id="player-0"></span></div>
+            <div class="player">PLAYER 2: <span class="click-count" id="player-1"></span></div>
+        </div>
+        <!-- Game header end -->
+        <!-- Card data container -->
+        <div class="container" id="data-display"></div>
+        <!-- Card data container end -->
+        <!-- Created by container -->
+        <div class="container">
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-sm-12 text-center">
+                    <div class="created_by"><a href="http://www.wes2k.com" style="color: #000000;">Created by Weston Edwards</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
